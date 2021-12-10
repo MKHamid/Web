@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 35%, #94bbe9 45%);
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 2px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 2rem;
+  max-width: 500px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.3);
+}
+.card:hover .thumb {
+  transform: scale(1.15);
+}
+.card p {
+  text-align: center;
+}
+.card .card-footer {
+  align-items: center;
+  background: #5cbfbb;
+  background: linear-gradient(90deg, #5cbfbb 0%, #74d690 100%);
+  color: white;
+  display: flex;
+  font-weight: bold;
+}
+.card .card-footer .thumb {
+  border-radius: 100%;
+  border: 4px solid white;
+  height: 60px;
+  margin: 0 1.5rem;
+  transition: transform 0.3s;
+  width: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-content {
+    padding: 4rem;
+  }
+  .card footer {
+    padding: 2rem 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
